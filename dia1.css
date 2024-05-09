@@ -1,0 +1,622 @@
+body {
+    background-size: cover;
+    font-family: sans-serif;
+    background-color: hsl(0, 77%, 12%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    color: #f8f6f5;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.container p {
+    font-size: 17px;
+}
+
+.container a {
+    color: white;
+    text-decoration: none;
+}
+
+.barra {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    /* Mantiene los enlaces en una fila */
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    padding: 0.5rem;
+    align-items: center;
+    background-color: transparent;
+    margin: 0;
+}
+
+.barra a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 0.8rem;
+    font-size: 14px;
+    padding: 0.3rem;
+}
+
+header {
+    background-image: url("fotos/afuera.jpg");
+    width: 82.5rem;
+    height: 38rem;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    color: #fff;
+    padding: 10rem;
+}
+
+header img{
+    width: 250px;
+}
+
+header h1 {
+    color: aliceblue;
+    font-size: 32px;
+}
+
+header h2 {
+    font-size: 24px;
+}
+
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#inicio p {
+    font-size: 1.2rem;
+    text-align: center;
+    white-space: normal;  /* Permite que el texto se ajuste y haga saltos de línea */
+    margin: 0.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 0;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    color: aliceblue;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+.info-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+    margin: 1.2rem auto;
+}
+
+.left-box,
+.right-box {
+    flex: 1;
+    padding: 2rem;
+    border-radius: 4rem;
+    background-color: #360707;
+    box-sizing: border-box;
+    margin: 2.5rem;
+}
+
+a {
+    color: #1b1717;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+
+#acerca {
+    background-image: url("fotos/abti.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+
+h1 {
+    color: aliceblue;
+}
+
+section {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+
+#acerca .container h2{
+    color: #360707;
+}
+
+
+section h2 {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+#acerca p {
+    padding: 0;
+    font-size: 1.42rem;
+    line-height: 2;
+    /*Interlineado*/
+}
+
+#acerca li {
+    padding: 0;
+    font-size: 1.44rem;
+    line-height: 1.4;
+    /*Interlineado*/
+}
+
+#programasdeestudio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    line-height: 2.2;
+}
+
+.container h2 {
+    font-size: 2.2rem;
+}
+
+.container p {
+    font-size: 1.4rem;
+}
+
+.enlaces {
+    justify-content: space-around;
+    color: white;
+    background-color: #474747;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    padding: 0.2rem;
+    flex-wrap: wrap;
+    /*Permite envolver los elementos si es necesario*/
+    margin: 0;
+}
+
+.ubi {
+    color: white;
+    background-color: transparent;
+}
+
+.ubi a {
+    background: none;
+    text-align: left;
+    color: #ddd;
+}
+
+.contacto {
+    background-color: transparent;
+}
+
+.contacto a {
+    background: none;
+    text-align: left;
+    color: white;
+}
+
+.redessociales {
+    background-color: transparent;
+    text-align: left;
+}
+
+.redessociales a {
+    color: white;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 1.4rem;
+}
+
+b {
+    color: rgb(248, 182, 182);
+}
+
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: justify;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+
+/*Diseño Responsive*/
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        overflow-x: hidden;
+    }
+
+    .container {
+        padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .barra {
+        padding: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        /* Permite el ajuste para evitar desbordamientos */
+    }
+
+    .barra a {
+        flex-direction: column;
+        font-size: 0.55rem;
+        margin: 0;
+        padding: 0.3rem;
+    }
+
+    section{
+        padding: 1rem 0;
+    }
+
+    header {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    #inicio {
+        margin: 0;
+        flex-wrap: wrap;  
+    }
+
+    #inicio p {
+        padding: 1rem;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    #acerca .container h2{
+        background-color: #1b17178d;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        margin: 0;
+    }
+
+    .info-group {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 1rem auto;
+    }
+
+    .left-box,
+    .right-box {
+        padding: 0.5rem;
+        box-sizing: border-box;
+        margin: 1.5rem;
+        margin-right: rem;
+        flex: 1;   
+        border-radius: 10px;
+    }
+
+    #acerca p {
+        padding: 0;
+        font-size: 1rem;
+        line-height: 1.5;
+        /*Interlineado*/
+    }
+
+    #acerca li {
+        padding: 0;
+        font-size: 1rem;
+        line-height: 1;
+        /*Interlineado*/
+    }
+
+    .div {
+        align-items: center;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+    }
+
+    .enlaces {
+        flex-wrap: wrap;
+        font-size: x-small;
+        margin: 0;
+        padding: 0;
+    }
+
+    .enlaces a {
+        font-size: 8.5px;
+    }
+
+    td {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    a{
+        font-size: 0.7rem;
+    }
+    h1 {
+        font-size: 1.2rem;  /* Ajusta el tamaño del título */
+    }
+
+    h2 {
+        font-size: 1rem;  /* Ajusta el tamaño del subtítulo */
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    .barra {
+        width: 98%;
+        padding: 0.2rem;
+        display: flex;
+        flex-wrap: wrap;
+        /* Permite el ajuste para evitar desbordamientos */
+    }
+
+    header img{
+        width: 150px;
+    }
+
+    header {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 1rem;
+        width: 91.5%;
+    }
+
+    #acerca p{
+        font-size: 0.8rem;
+    }
+
+    table{
+        width: 100%;
+    }
+
+}
+
+/*Animacion*/
+.barra {
+    animation: slideInDown 0.5s ease-in-out;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+header {
+    animation: fadeIn 2.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.redessociales a {
+    transition: transform 50s step-end;
+}
+
+.redessociales a:hover {
+    transform: scale(1.2); 
+}
+
+.info-group {
+    animation: slideInLeft 0.7s ease-in-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.enlaces {
+    animation: slideInRight 0.7s ease-in-out;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.info-group {
+    animation: slideInLeft 0.7s ease-in-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.enlaces {
+    animation: slideInRight 0.7s ease-in-out;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.barra a {
+    position: relative;
+    text-decoration: none;  
+    transition: color 0.3s ease;  
+}
+
+
+
+.barra a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;  
+    bottom: -2px; 
+    left: 0;
+    transform: scaleX(0); 
+    transition: transform 0.3s ease;  
+}
+
+.barra a:hover {
+    color: white;  
+    box-shadow: 0 4px 8px rgba(251, 249, 249, 0.878); 
+}
+
+.barra a:hover::after {
+    transform: scaleX(1);  
+}
+
+.barra a {
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.barra a:hover {
+    background-color: rgba(255, 255, 255, 0.1);  
+    color: white;  
+}
+
+.enlaces a {
+    text-decoration: none;  
+    position: relative;  
+    transition: color 0.3s ease;  
+}
+
+.enlaces a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;  
+    background-color: white; 
+    bottom: -2px;  
+    left: 0;
+    transform: scaleX(0); 
+    transition: transform 0.3s ease;  
+}
+
+.enlaces a:hover {
+    color: white;  
+}
+
+.enlaces a:hover::after {
+    transform: scaleX(1);  
+}
+
+.enlaces a {
+    text-decoration: none;
+    position: relative;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.enlaces a:hover {
+    background-color: rgba(255, 255, 255, 0.1);  
+    color: white;  
+}

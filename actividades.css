@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #290707f6;
+    color: #faf8f8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+.titulo {
+    background-color: #290707f6;; 
+    display: flex;
+    flex-direction: row; /* Mantiene los enlaces en una fila */
+    padding: 0;
+    transition: all 0.3s;  
+}
+    
+.titulo a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1.1rem;
+}    
+
+.titulo a:hover {
+    color: #ffffff; 
+    background-color: rgba(255, 255, 255, 0.3);  
+    box-shadow: 0 4px 4px rgba(251, 249, 249, 0.878); 
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h1 {
+    color: #f8f9fa;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+.actividad {
+    background-color: #412222; 
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.actividad h2 {
+    color: #f8f6f6; 
+    font-size: 24px; 
+}
+
+.actividad p {
+    font-size: 30px;
+}
+
+
+.actividad img {
+    width: 55%;
+    height: auto;
+    position: 50%;
+    align-items: center;
+    border-radius: 20px;
+}
+
+img {
+    opacity: 0.6;  /* Opacidad por defecto, imagen más opaca */
+    transition: opacity 0.3s ease;  /* Transición suave */
+}
+
+img:hover {
+    opacity: 1;  /* Vuelve a ser completamente visible al pasar el cursor */
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+}
+
+footer{
+    margin: 0;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);  /* Comienza desplazado hacia arriba */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);  /* Vuelve a la posición normal */
+    }
+}
+
+h1 {
+    animation: slide-in 1s ease-in-out;  /* Aplica la animación de deslizamiento */
+}
+
+
+@media (max-width: 480px) {
+ 
+    .titulo {
+        padding: 0;  /* Ajusta el padding para dispositivos móviles */
+      }
+    
+      .titulo a {
+        margin: 0.3rem;
+        padding: 0;  /* Padding reducido para dispositivos móviles */
+        font-size: 0.6rem;  /* Tamaño del texto reducido para enlaces */
+      }
+
+    .actividad{
+        margin: o;
+        padding: 0.7rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;  /* Ajusta el tamaño del título */
+    }
+
+    .actividad h2{
+        font-size: 1rem;
+    }
+
+    .actividad p{
+        font-size: 1.2rem;
+    }
+}
+
+/* Animación para deslizamiento y desvanecimiento */
+@keyframes fade-slide-in {
+    from {
+        opacity: 0;  /* Comienza invisible */
+        transform: translateY(-50px);  /* Comienza desplazado hacia arriba */
+    }
+    to {
+        opacity: 1;  /* Se vuelve visible */
+        transform: translateY(0);  /* Vuelve a su posición normal */
+    }
+}
+
+.titulo {
+    opacity: 0;  /* Comienza invisible */
+    animation: fade-slide-in 1s ease-in-out 0.3s forwards;  /* Animación con retraso */
+}
+
+h1 {
+    opacity: 0;  
+    animation: fade-slide-in 1s ease-in-out 0.3s forwards;  /* Animación con retraso */
+}
+
+.actividad {
+    opacity: 0;  
+    animation: fade-slide-in 1s ease-in-out 0.5s forwards;  /* Animación con retraso */
+}

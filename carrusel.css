@@ -1,0 +1,162 @@
+
+body {
+    background: linear-gradient(180deg, rgba(192, 109, 109, 0.905) 20%, rgb(96, 26, 26) 50%, rgba(204, 204, 204, 1) 100%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 40vh;
+    border-radius: 80px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centra el contenido */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Alinea en columna */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+    margin: 0 auto; /* Centra el contenedor */    
+}
+
+.barra {
+    display: flex;
+    justify-content: flex-start;
+    /* Mantiene los enlaces en una fila */
+    padding: 0.5rem;
+    align-items: center;
+    margin: 0;
+    animation: fade-in 2s forwards;
+}
+
+.barra a {
+    color: #3f1313;
+    text-decoration: none;
+    margin: 0 0.8rem;
+    font-size: 18px;
+    padding: 0.3rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.barra a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(251, 249, 249, 0.878); 
+}
+
+.navbar {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: rgb(58, 11, 11);
+    font-size: 50px;
+    margin-top: 2cm;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.182);
+    text-align: center;    
+}
+
+.swiper-wrapper {
+    display: flex;  /* Activa Flexbox */
+    justify-content: center;  /* Centra horizontalmente */
+}
+
+.swiper {
+    background-color: #8f5c5c00;
+    width: 92%;
+    margin-top: 2cm;
+    margin: 0 auto;
+    height: auto; /* Ajusta la altura según el contenido */
+}
+
+.swiper-slide {
+    margin-bottom: 50px;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.182);
+    border-radius: 80px;
+    height: 420px;
+    padding: 0;
+    margin-right: 0;
+}
+
+.swiper-slide img {
+    width:100%;
+    border-radius: 80px;
+    height: 420px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #321616;
+    margin-top: 46px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.swiper-pagination {
+    text-align: center; 
+    position: absolute; 
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slide-in 2s forwards;
+    animation-delay: 2s; /* Retraso para el efecto */
+}
+
+@media (max-width: 768px) {    
+    
+    h1 {
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .swiper { 
+        width: 25rem;
+        height: 28rem;
+    }
+
+    .swiper-slide img {
+        width:25rem;
+    }
+    
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: white;
+        top: 48%; /* Centra las flechas verticalmente */
+    }
+
+    .swiper-pagination {
+        position: absolute; 
+    }    
+
+    .barra a{
+        font-size: 0.7rem;
+        margin: 0 0;
+    }
+}
+
+/* Definición de las animaciones */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

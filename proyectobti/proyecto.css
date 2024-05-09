@@ -1,0 +1,179 @@
+.gallery {
+    display: grid; 
+  grid-template-columns: repeat(4, minmax(300px, 1fr)); 
+    gap: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 50px;
+    width: 375px;
+    color: #f5f1f1;
+    margin: auto;
+    padding: 1.5rem;
+  }
+  
+  .titulo {
+    background-color: #290707f6;
+    display: flex;
+    flex-direction: row; 
+    padding: 0;
+  }
+  
+  body {
+    background-color: rgb(112, 54, 54);
+    justify-content: center;
+    overflow-x: hidden;
+    display: flex;  
+    flex-direction: column;  
+    align-items: center; 
+  }
+  
+  .titulo a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
+  .titulo {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    /* Mantiene los enlaces en una fila */
+    width: 100%;
+    padding: 0.2rem;
+    align-items: center;
+    background-color: transparent;
+    margin: 0;
+}
+
+.titulo a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;  /* Transición suave */
+    position: relative; 
+    transition: all 0.3s;
+}
+
+.titulo a:hover {
+    background-color: rgba(198, 45, 45, 0.3);  /* Cambio de color de fondo */
+    color: #ffffff;  /* Cambio de color del texto */
+    box-shadow: 0 4px 8px rgba(251, 249, 249, 0.878); 
+}
+  .photo {
+    overflow: hidden;
+    border-radius: 1px;
+    box-shadow: 0 1px 2px rgba(235, 17, 17, 0.1);
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: column; 
+    align-items: center; 
+    width: 300px; 
+    margin: 0 auto; 
+    height: auto;
+  }
+  
+  .photo:hover {
+    transform: translateY(-5px); 
+  }
+  
+  .photo img {
+    width: 100%; 
+    height: auto; 
+  }
+  
+  .description {
+    margin-top: 3rem;
+    margin-right: 3rem;
+    text-align: center; 
+  }
+  
+  .description h3 {
+    margin-top: 0;
+    color: #333; 
+    margin-right: 5px;
+    font-size: 25px;
+  }
+  
+  .description p {
+    color: #131212; 
+    font-size: 20px;
+
+  }
+
+ 
+  @media (max-width: 768px) {
+    .titulo a{
+      font-size: 0.65rem;
+  }
+    h1{
+      font-size: 2.2rem;
+    }
+    .gallery {
+      grid-template-columns: 1fr; 
+    }
+  }
+  
+  .gallery > .photo:nth-child(1) {
+    grid-row: 1; 
+  }
+
+  .description {
+    margin-top: 0.5rem;
+  }
+
+  h3 {
+    margin-left: 2.5rem;
+  }
+  
+  p{
+    margin-left: 2.5rem;
+  }
+
+  /* Animación para deslizamiento y desvanecimiento */
+@keyframes fade-slide-in {
+  from {
+      opacity: 0;  /* Comienza invisible */
+      transform: translateY(-50px);  /* Comienza desplazado hacia arriba */
+  }
+  to {
+      opacity: 1;  /* Se vuelve visible */
+      transform: translateY(0);  /* Vuelve a la posición normal */
+  }
+}
+
+/* Aplicación de la animación a diferentes elementos */
+.titulo {
+  opacity: 0;  /* Comienza invisible */
+  animation: fade-slide-in 1s ease-in-out 0.3s forwards;  /* Aplica la animación con retraso */
+}
+
+h1 {
+  opacity: 0;  
+  animation: fade-slide-in 1s ease-in-out 0.5s forwards;  /* Aplica la animación con retraso */
+}
+
+.gallery {
+  opacity: 0;  
+  animation: fade-slide-in 1s ease-in-out 0.7s forwards;  /* Aplica la animación con retraso */
+}
+
+/* Estilo para la barra de navegación */
+.titulo {
+  transition: all 0.3s;  /* Transición suave para hover */
+}
+
+.titulo a {
+  transition: all 0.3s;  /* Transición suave para hover */
+}
+
+.titulo a:hover {
+  color: #ffffff;  /* Cambio de color al pasar el cursor */
+  background-color: rgba(255, 255, 255, 0.3);  /* Fondo translúcido */
+  box-shadow: 0 4px 4px rgba(251, 249, 249, 0.878);  /* Sombra al pasar el cursor */
+}
